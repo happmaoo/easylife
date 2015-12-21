@@ -1,0 +1,231 @@
+
+/*-----------commment:--------------*/
+/*easylife theme*/
+/*
+  规范：
+
+  行高 1.5
+  
+ 列表 margin-bottom 20px
+ 列表文章 info 图标margin-right  10px
+
+ 文章 p margin bottom 30px
+
+	网站主栏目颜色，sidebar主栏目标题  #888
+	
+  灰色类文字 tag,副标题 #999 
+*/
+/*-----------end commment:--------------*/
+/*
+图片上加文字的透明渐变背景
+background-image:-webkit-gradient(linear,0 0,0 100%,from(rgba(0,0,0,.01) 40%),to(rgba(0,0,0,.7) 80%));
+background-image:-webkit-linear-gradient(top,rgba(0,0,0,.01) 40%,rgba(0,0,0,.7) 80%);
+background-image:-moz-linear-gradient(top,rgba(0,0,0,.01) 40%,rgba(0,0,0,.7) 80%);
+background-image:linear-gradient(top,rgba(0,0,0,.01) 40%,rgba(0,0,0,.7) 80%);
+*/
+
+/*------ common style --------*/
+.no_radius{border-radius:0;}
+.shadow_1{box-shadow:3px 3px 3px #d1d1d1;}
+
+
+
+
+/*-----header ------*/
+
+
+h1,h2,h3,h4,h5,h6{line-height:1.5;}
+
+body{
+	font-family: "Microsoft YaHei","helvetica neue",arial,sans-serif;
+	font-size: 14px;
+	background:#fff;
+	line-height:1.5;
+	/*background: transparent url("content.png") repeat scroll top;*/
+}
+
+ol,li,ul,dl,dt,dd{list-style-type: none;padding:0;}
+.navbar {border-color:#F3F3F3;box-shadow:0px 1px 0px #d1d1d1;/*模仿iphone，两层border，第二层用box-shadow实现*/}
+a{color:#008489;}
+a:hover{color:#888;}
+a:active{color:#A094C4;}
+
+
+#header{margin-bottom:70px;}
+#bodyer{max-width:1000px;margin-bottom:20px;}
+
+.logo{display:block;height:32px;width:130px;margin:7px 10px 0 0px;background: transparent url("logo.png") no-repeat scroll 0 bottom;background-size:contain;text-indent: -3000px;overflow: hidden;}
+.navbar-default .navbar-toggle{border-color:#F8F8F8;}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background-color: transparent;}
+
+.ex-navbar-toggle{display: none;}
+/*-----------index / list content-----------*/
+
+.list_box{margin:0 0 20px 0;padding:0 0 20px 0;overflow:hidden;clear:both;border-bottom:1px solid #e2e2e2;table-layout:fixed; word-break: break-all; overflow:hidden;}
+.article_list_title{color:#337ab7;}
+.article_list_box2 dt,.article_list_info{text-align: center;}
+.article_list_box2 h1{font-size:20px;margin:0 0 10px 0;}
+.article_list_info{color:#888;margin-bottom:10px;}
+.article_list_box2 .thumbnail{width:100%;border:none;}
+.article_list_box2 .thumbnail img{width:300px;}
+.glyphicon{margin-right:5px;}
+
+
+/*-----------single content-----------*/
+.bodyer_txt{/*padding-left:100px;*/table-layout:fixed; word-break: break-all; overflow:hidden;}
+.txt_content {font-size:16px;color:#333;line-height:1.75;}
+.txt_content p{margin:0 0 30px 0;}
+.txt_content img{max-width:100%;border-radius:3px;}
+textarea{width:100%;}
+.article_header{text-align:center;border-bottom:1px solid #eee;padding:0 0 10px 0;margin:0px 0 20px 0;overflow: hidden;}
+.article_header h1{color:#333;font-size:20px;}
+.article_info{margin-bottom:0;}
+.article_info li{float:left;margin-right:10px;}
+.article_info{overflow: hidden;color:#888;}
+
+.article_info2{overflow: hidden;color:#888;}
+.article_copyright{font-size:12px;}
+.article_copyright a{color: #008000;font-weight: 700;}
+.article_tools_share{margin: 10px auto 0 auto;;width:100%;text-align:center;}
+.bdsharebuttonbox{display: inline-block;}
+.article_tools_xg h5{margin: 0;/*background-color:#A094C4!important;color:#fff!important;text-shadow:1px 1px 2px #000;*/}
+/*-----------side-----------*/
+.bodyer_sider .panel-heading{color:#888;}
+
+.category-parent ul{margin:0 0 0 10px;}
+.tagsCloud .panel-body{padding: 5% 5% 3% 5%;overflow: hidden;}
+.tagsCloud a{border-radius:3px;color:#fff;float: left;background: #008489;margin:0 5px 5px 0;padding: 2px 7px;transition: all 0.2s linear;text-decoration: none;}
+.tagsCloud a:hover{background: #888;}
+.tagsCloud a sup{margin:0 0 0 5px;color:#ddd}
+/*----------- pages -----------*/
+
+.archive_title{text-align:center;color:#888;}
+
+/*-- comment --*/
+
+#comments{margin-bottom:20px;}
+.comment-list,.comment-list ol{list-style:none;margin:0;padding:0;}
+.comment-list li{padding:5px 15px;margin-top:10px;border:1px solid #EEE;}
+.comment-list li.comment-level-odd{background:#F6F6F3;}
+.comment-list li.comment-level-even{background:#FFF;}
+.comment-list li.comment-by-author{background:#f5f5f5;}
+.comment-list li .comment-reply{text-align:right;font-size:.92857em;}
+.comment-meta a{color:#999;font-size:.92857em;}
+.comment-author{display:block;margin-bottom:3px;color:#444;}
+.comment-author .avatar{float:left;margin-right:10px;}
+.comment-author cite{font-weight:bold;font-style:normal;}
+.comment-list .respond{margin-top:15px;border-top:1px solid #EEE;}
+.respond .cancel-comment-reply{float:right;margin-top:15px;font-size:.92857em;}
+#comment-form{border:1px solid #e2e2e2;padding:10px;background: #F5F5F5;}
+#comment-form label{display:block;margin-bottom:.5em;font-weight:bold;}
+#comment-form .required:after{content:" *";color:#C00;}
+
+
+#comments h3#response{color:#999;font-size: 22px;margin:15px 0;}
+/*-- end comment --*/
+
+/*-------- footer --------------*/
+.footer_content{border-top:1px solid #eee;background:#f5f5f5;padding:20px 0 20px 0;}
+.footer_content .glyphicon{color:#888;}
+.footer_content h4{font-size:16px;display: inline;color:#888;}
+.footer_content ul{margin:10px 0 0 0;}
+.col-md-4 {margin:0 0 10px 0;}
+
+.footer_copyright{color:#aaa;font-size:12px;background:#414141;/*background:#eee;*//*border-top:1px solid #EEE;*/padding:30px 0 20px 0;}
+.footer_copyright h4{font-size:14px;}
+.footer_copyright a{color:#bbb;}
+
+.logo_f{height:150px;margin: 0px 0px 10px;background: transparent url("logo_b.png") no-repeat scroll 0% 100%;background-size:contain;background-position: 0px 0px;overflow: hidden;}
+.f_info{font-size:14px;width:100%;}
+.f_info p{margin:0 0 5px;}
+
+.copyright{/*border-top: 1px solid #EEE;*/padding-top:20px;text-align: center;}
+
+/*---follow---*/
+.footer_copyright .follow a{display: block;float:left;text-indent: -3000px;overflow: hidden;background:transparent url("follow.gif") no-repeat scroll 0% 100%;background-size:cover;opacity:1;width:25px;height:25px;margin:0 10px 10px 0;}
+
+.footer_copyright .follow .wx a{background-position: -25px 0px;}
+.footer_copyright .follow .tw a{background-position: -50px 0px;}
+
+.footer_copyright .follow .wx{color:#333;}
+/*---follow end---*/
+
+
+/* -------------------  插件相关/其他  ----------------------- */
+
+/*外部链接icon*/
+.external{padding-right:15px;margin-right:3px;background: transparent url('data:image/svg+xml,<%3Fxml version%3D"1.0" encoding%3D"UTF-8"%3F><svg xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width%3D"10" height%3D"10"><g transform%3D"translate(-826.429 -698.791)"><rect width%3D"5.982" height%3D"5.982" x%3D"826.929" y%3D"702.309" fill%3D"%23fff" stroke%3D"%2306c"%2F><g><path d%3D"M831.194 698.791h5.234v5.391l-1.571 1.545-1.31-1.31-2.725 2.725-2.689-2.689 2.808-2.808-1.311-1.311z" fill%3D"%2306f"%2F><path d%3D"M835.424 699.795l.022 4.885-1.817-1.817-2.881 2.881-1.228-1.228 2.881-2.881-1.851-1.851z" fill%3D"%23fff"%2F><%2Fg><%2Fg><%2Fsvg>') no-repeat scroll right 50%;}
+
+/* gotop */
+.backtotop{position:fixed;bottom:113px;left:60%;z-index:19;margin-left:230px}
+.backtotop .btn-action{display:block;width:38px;height:38px;background-color:#ddd;border-radius:3px;border:0;cursor:pointer;position:relative}
+.backtotop .arrow,.backtotop .stick{position:absolute;right:0;left:0;margin:auto}
+.backtotop .arrow{width:0;height:0;top:-1px;border:9px solid transparent;border-bottom-color:#aaa}
+.backtotop .stick{width:8px;height:14px;top:15px;border-radius:1px;background-color:#aaa}
+
+/*友情链接*/
+#links_page{width:100%;height:69px;background:transparent url("img/links.png") no-repeat 0 0;}
+/*
+
+友情链接 制作方法：
+新建page，加入代码：
+
+*/
+
+
+/* 广告 */
+.g{margin:0 0 10px 0;clear:both;}
+.g_side{}
+
+/* 插件： syntaxhighlighter  相关 */
+
+article .syntaxhighlighter code{font-size:14px!important;}
+.code .container:before {content: none!important;}
+
+/* 插件：  YinXiangMahappmaoo 相关 */
+
+.YinXiangMahappmaoo_Plugin{visibility:hidden;display: none;}
+.YinXiangMahappmaoo_Plugin *{box-sizing:content-box;vertical-align:baseline;}
+
+/* 插件：  MyTools 相关 */
+.download_link{border:1px solid #aaa;border-radius:3px;padding:8px 10px 8px 42px;background: /*transparent*/#F5F5F5 url("../style/download3.png") no-repeat 10px 50%;background-size:28px;transition: all 0.5s linear;box-shadow: 2px 2px 2px rgba(0, 0,0, 0.3);}
+.download_link:hover{background-color: /*transparent*/;box-shadow: 0px 0px 11px rgba(0, 160,250, 0.57);}
+
+
+
+/*-------------------------------------------------------@media put this on end of css -----------------------------------------------*/
+
+@media (max-width: 768px)  {
+.txt_content{font-size:16px;}
+
+.logo{margin-left:15px;}
+/*原来的nanbar，不用可删除    .search_form{margin:0!important;}
+.search_input{float:left;width:75%;margin-right:5%;}
+.search_button{width:20%;}*/
+.navbar-form{border-top:none;}
+.navbar-toggle {padding: 9px 3px;}
+.ex-navbar-toggle {
+    position: relative;
+    float: right;
+    display: block;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 8px;
+    margin-right: 15px;
+    color: #999;
+    cursor: pointer;
+}
+.logo_f{height:100px;background-position: 50% 0px;}
+
+/*------------*/
+.footer_copyright .follow a{width:32px;height:32px;margin:0 16px 16px 0;}
+
+.footer_copyright .follow .wx a{background-position: -32px 0px;}
+.footer_copyright .follow .tw a{background-position: -64px 0px;}
+.footer_copyright .follow .bl a{background-position: -96px 0px;}
+/*------------*/
+}
+
+@media (max-width: 468px)  {
+
+}
